@@ -1,0 +1,57 @@
+
+.navbar{
+	background-color: #5d5d5d;
+}
+
+.navbar-brand{
+	color:white;
+}
+
+.nav-link{
+	color: white;
+}
+
+.nav-item .active{
+	color:white;
+}
+
+.nav-item{
+	color: silver;
+}
+
+.nav-link:hover{
+	color:silver;
+}
+
+.btn.btn-primary {
+    margin-right: 10px;
+    background-color: #21427d;
+    border-color: #21427d;
+    width: 100%;
+}
+
+.btn.btn-primary:hover {
+	background-color: #2142Ad;
+	color:silver;
+}
+
+.jumbotron-fluid {
+	padding-bottom: 2%;
+}
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {  }
+
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {  }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }
