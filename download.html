@@ -1,0 +1,44 @@
+
+
+
+	<p id="mainDownload">You can download snoReport 2.0 Package <a href="data/snoReport_2.tar.gz">HERE</a>.</p>
+
+	<h2>Installation</h2>
+
+	<h3>Requirements:</h3>
+
+<div class="section-text">
+	<p>SnoReport 2.0 needs <b>Vienna RNA Package</b> installed on your computer. So make sure the 
+	package is correctly installed and, if necessary, adjust the paths in the makefile file, such 
+	that the Vienna RNA library and the include files can be found. The default location of
+	Vienna RNA library is: <b>"/usr/include/ViennaRNA/"</b></p>
+
+	<p>Snoreport 2.0 was writen in C ansi and it uses a small program written in C++ to run RNALfold.
+	So, make sure you have installed g++ compiler</p>
+
+	<p>To extract SnoReport_2 folder:</p>
+
+		<p class="commands">tar xzvf snoReport_2.tar.gz</p>
+
+	<p>To compile the source code of snoReport run:</p>
+
+		<p  class="commands">./compile.sh (or bash ./compile.sh)</p>
+
+
+	<p>Before you can use the program, you need to set the environment variable
+	<b>SNOREPORTMODELS</b>, pointing to the 'models/' directory of your installation
+	directory.</p>
+
+	<p>On the terminal type:</p>
+
+		<p class="commands">$ export SNOREPORTMODELS="/your/installation/directory/models/"</p>
+
+	<p>e.g if you installed snoReport on your user folder: </p>
+
+		<p  class="commands">$ export  SNOREPORTMODELS="/home/username/snoReport_2/models/"</p>
+
+	<p>It is useful set the environment variable on the <b>~/.bashrc</b> file (Just paste the previous command in some line on .bashrc), so you do not need to type the previous command every time that runs snoReport 2. After you modified the ~/.bashrc file, please, <b>restart the terminal.</b></p>
+
+	<p class="destaque">Now you already can use snoReport_2 to predict beautiful snoRNAs.</p>
+
+</div>

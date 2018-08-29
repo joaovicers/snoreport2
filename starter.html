@@ -1,0 +1,62 @@
+
+
+
+	<h2>Introduction</h2>
+
+<div class="section-text">
+		<p>SnoReport 2.0 is a tool that identifies the two main classes of snoRNAs, using a combination of secondary structure prediction and machine learning. In contrast to previous methods for snoRNA identification (except snoSeeker), snoReport prediction does not use information of putative target sites within ribosomal or spliceosomal RNA. However, many orphan snoRNAs have been discovered with the snoReport 1.0 approach. The target(s) of orphan snoRNAs are not known, consequently such genes would be missed by target depending on the identification method. Beyond this, some snoRNAs are shown to target specific mRNAs, suggesting other functions, e.g., interference with A-to-I editing. </p>
+
+		<p> Here, we present an update of snoReport, by extracting new features for both C/D and H/ACA box snoRNAs, developing a more sophisticated technique in the SVM training phase (with recent data from vertebrate organisms and a different approach to refine the C and γ SVM parameters), and using new versions of the tools and databases previously taken to build snoReport. To validate this new version of snoReport, we tested it in different organisms. These experiments have shown a very good performance. </p>
+</div>
+
+	<h2> Howto </h2>
+
+		<h3> USAGE: </h3>
+
+<div class="section-text">
+
+		 <p class="commands"> snoreport_2 -i &lt;fasta_file&gt; [-CD|-HACA] [-trainCD|-trainHACA]  [OPTIONS] </p>
+
+		
+		<div class="row">
+			<div class="col-4 opt">-h,--help </div><div class="col-8 opt-text">Print help and exit.</div>
+			<div class="col-4 opt">--verbose</div><div class="col-8 opt-text">Verbose mode.</div>
+
+		</div>                
+
+		<p><b>General Options</b></p>
+
+		<div class="row">
+			<div class="col-4 opt">-i &lt;fasta file&gt;</div><div class="col-8 opt-text">Inform the input file (fasta file).</div>
+			<div class="col-4 opt">-CD</div><div class="col-8 opt-text">Predict C/D box snoRNAs.</div>
+			<div class="col-4 opt">-HACA</div><div class="col-8 opt-text">Predict H/ACA box snoRNA.</div>
+			<div class="col-4 opt">--trainCD, --TrainHACA</div><div class="col-8 opt-text">Generate feature vectors from snoRNA candidates (for machine learning tasks only).</div>
+			<div class="col-4 opt">--positives</div><div class="col-8 opt-text">Output only positive predictions.</div>
+			<div class="col-4 opt">-o &lt;file>&gt;</div><div class="col-8 opt-text">Generate a fasta file with the putative snoRNAs found.</div>
+			<div class="col-4 opt">--PS</div><div class="col-8 opt-text">Creates a postScript visualization of the predicted snoRNAs</div>
+				
+
+		</div>
+		
+		<br>
+		<p>snoReport have two types of output:</p>
+
+			<ul>
+				<li>Fasta file output: generate a fasta file with the predicted snoRNAS</li>
+				<li>&lt;STDOUT&lg; output: Generate a table informing:</li>
+			</ul>
+				
+		<p><b>For C/D box:</b></p>
+			
+				<p class="commands"> #Seq_ID #Start #End #C box #C box start position #D box #D box start pos #SVM prob	#veredict</p>
+			
+			e.g		
+					
+				<p class="commands">seq_1     1    142   TTGATGA 11 CTGA 133 0.96 C/D box snoRNA</p>
+			
+		<p>For H/ACA box is the same, but C and D boxes are replaced by H and ACA box, respectively.</p>
+
+		<p> If you have some problems on installation or in the usage, or you have some suggestion, please tell me on my email: <a href="mailto:joaovicers@gmail.com">joaovicers@gmail.com</a>.</p>
+
+
+</div>

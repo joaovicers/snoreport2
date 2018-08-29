@@ -16,77 +16,81 @@
 </head>
 <body>
 
-
+<!--<img src="images/unb.png"> -->
 <nav class="navbar navbar-expand-lg">
-  <a class="navbar-brand" href="#"><img src="images/unb.png"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <a class="navbar-brand" href="http://unb.br"><img src="images/unb.png"></a>
+  <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link " href="index.html">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a  class="nav-link download" href="#">Download</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Download</a>
+        <a class="nav-link starter" href="#">Starter Guide</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Starter Guide</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Help</a>
+        <a class="nav-link about" href="#">About the Authors</a>
       </li>
     </ul>
     
   </div>
+  -->
+  
+
 </nav>
 
 
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">SnoReport 2.0
-</h1>
-    <p class="lead">New features and a refined Support Vector Machine to improve snoRNA identification</p>
+<div id='mainView'>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">SnoReport 2.0
+  </h1>
+      <p class="lead">New features and a refined Support Vector Machine to improve snoRNA identification</p>
+    </div>
+    <hr class="display-4">
+    <div class="container opcoes">
+        <div class="row">       
+          <div class="col-md-3"><a class="btn btn-primary download" href="#" role="button">Download</a></div>        
+          <div class="col-md-3"><a class="btn btn-primary starter" href="#" role="button">Starter Guide</a></div>        
+          <div class="col-md-3"><a class="btn btn-primary about" href="#" role="button">About the Authors</a></div>        
+        </div>
+    </div>
   </div>
-  <hr class="display-4">
-  <div class="container opcoes">
-      <div class="row">
-        <div class="col-md-3"><a class="btn btn-primary" href="#" role="button">About</a></div>        
-        <div class="col-md-3"><a class="btn btn-primary" href="#" role="button">Download</a></div>        
-        <div class="col-md-3"><a class="btn btn-primary" href="#" role="button">Starter Guide</a></div>        
-        <div class="col-md-3"><a class="btn btn-primary" href="#" role="button">Help</a></div>        
-      </div>
+
+
+  <div class="container main">
+
+      <p>SnoReport uses RNA secondary structure prediction combined with machine learning as the basis to identify the two main classes of small nucleolar RNAs, the box H/ACA snoRNAs and the box C/D snoRNAs.</p>
+
+      <p>Here, we present snoReport 2.0, which substantially improves and extends in the original method by:</p>
+        <ul>
+          <li>Extracting new features for both box C/D and H/ACA box snoRNAs;</li>
+          <li>Developing a more sophisticated technique in the SVM training phase with recent data from vertebrate organisms and a careful choice of the SVM parameters C and γ;</li>
+          <li>Using updated versions of tools and databases used for the construction of the original version of snoReport.</li>
+        </ul> 
+
+      <p>"SnoReport 2.0: new features and a refined Support Vector Machine to improve snoRNA identification" paper was published in BMC Bioinformatics and are available for reading <a class="links" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5249026/">here</a> </p>
+       
+        
   </div>
+
+
 </div>
 
-
-<div class="container main">
-
-    <p>SnoReport uses RNA secondary structure prediction combined with machine learning as the basis to identify the two main classes of small nucleolar RNAs, the box H/ACA snoRNAs and the box C/D snoRNAs.</p>
-
-    <p>Here, we present snoReport 2.0, which substantially improves and extends in the original method by:</p>
-      <ul>
-        <li>Extracting new features for both box C/D and H/ACA box snoRNAs;</li>
-        <li>Developing a more sophisticated technique in the SVM training phase with recent data from vertebrate organisms and a careful choice of the SVM parameters C and γ;</li>
-        <li>Using updated versions of tools and databases used for the construction of the original version of snoReport.</li>
-      </ul> 
-
-
-     
-      
-</div>
-
-
-
-
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+    
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </body>
 </html>

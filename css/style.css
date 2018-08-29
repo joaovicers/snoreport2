@@ -39,19 +39,73 @@
 	padding-bottom: 2%;
 }
 
+
+p#mainDownload a {
+    font-size: 1.3em;
+}
+
+img {
+    width: 100%;
+}
+
+h2 {
+    padding-left: 2.5%;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+h3{
+	padding-left: 5%;
+    margin-bottom: 30px;
+}
+
+.section-text {
+    padding-left: 5%;
+}
+
+
+p.commands {
+    padding-left: 7.5%;
+    color: #2142Ad;
+    font-weight: bold;
+}
+
+b {
+    color: #28a745;
+    font-size: 1.1em;
+}
+
+.col-4.opt {
+    text-align: right;
+}
+
+
 // Extra small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {  }
+@media (min-width: 576px) {  
 
+
+}
 
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {  }
+@media (min-width: 768px) {  
+
+}
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {  }
+@media (min-width: 992px) {  
+
+}
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {  }
+@media (min-width: 1200px) {  
+
+	.jumbotron.jumbotron-fluid {
+
+		color:blue;
+	}
+	
+}
