@@ -16,3 +16,10 @@ $('.starter').on('click',function(){
 	});
 });
 
+
+$('.help').on('click',function(){
+	$.get('help.html',function(data){
+		$('.main').html(data);
+	});
+});
+

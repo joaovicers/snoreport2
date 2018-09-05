@@ -37,6 +37,12 @@
 
 .jumbotron-fluid {
 	padding-bottom: 2%;
+	padding-top: 2%;
+}
+
+
+.col-sm-12 {
+    margin-bottom: 10px;
 }
 
 
@@ -80,6 +86,22 @@ b {
 }
 
 
+span.trouble {
+    font-size: 1.7em;
+    display: block;
+    margin-bottom: 21px;
+}
+
+a.home {
+    text-decoration: none;
+    color: black;
+}
+
+ul.contact {
+    padding-left: 15px;
+    list-style: none;
+}
+
 // Extra small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
 
@@ -87,11 +109,14 @@ b {
 @media (min-width: 576px) {  
 
 
+
 }
 
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {  
+
+
 
 }
 
@@ -103,9 +128,6 @@ b {
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {  
 
-	.jumbotron.jumbotron-fluid {
-
-		color:blue;
-	}
+	
 	
 }
